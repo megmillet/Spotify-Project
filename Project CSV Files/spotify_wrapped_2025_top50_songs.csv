@@ -1,0 +1,51 @@
+wrapped_2025_rank,song_title,artist,streams_2025_billions,primary_genre,bpm,duration_seconds,release_year,artist_country,explicit,danceability,energy,valence,acousticness,peak_global_chart_position,dataset_part
+1,Die With A Smile,Lady Gaga & Bruno Mars,1.7,Pop,120,251,2024,USA,False,0.72,0.68,0.55,0.18,1,Spotify Wrapped 2025 Top 50 Global Songs
+2,APT.,ROSE & Bruno Mars,1.62,K-Pop/Pop,145,173,2024,South Korea,False,0.86,0.79,0.88,0.05,1,Spotify Wrapped 2025 Top 50 Global Songs
+3,Espresso,Sabrina Carpenter,1.55,Pop,104,175,2024,USA,False,0.8,0.73,0.96,0.06,1,Spotify Wrapped 2025 Top 50 Global Songs
+4,Please Please Please,Sabrina Carpenter,1.48,Pop,107,186,2024,USA,False,0.7,0.66,0.87,0.1,1,Spotify Wrapped 2025 Top 50 Global Songs
+5,Taste,Sabrina Carpenter,1.41,Pop,117,177,2024,USA,True,0.78,0.7,0.82,0.08,1,Spotify Wrapped 2025 Top 50 Global Songs
+6,Birds Of A Feather,Billie Eilish,1.38,Indie Pop,88,210,2024,USA,False,0.75,0.44,0.65,0.38,1,Spotify Wrapped 2025 Top 50 Global Songs
+7,Not Like Us,Kendrick Lamar,1.35,Hip-Hop,101,274,2024,USA,True,0.82,0.72,0.62,0.04,1,Spotify Wrapped 2025 Top 50 Global Songs
+8,"Good Luck, Babe!",Chappell Roan,1.29,Pop,131,219,2024,USA,False,0.66,0.78,0.56,0.04,1,Spotify Wrapped 2025 Top 50 Global Songs
+9,Beautiful Things,Benson Boone,1.24,Pop Rock,97,211,2024,USA,False,0.46,0.68,0.46,0.07,1,Spotify Wrapped 2025 Top 50 Global Songs
+10,Lose Control,Teddy Swims,1.2,R&B/Soul,90,202,2023,USA,False,0.6,0.55,0.64,0.21,1,Spotify Wrapped 2025 Top 50 Global Songs
+11,Too Sweet,Hozier,1.18,Indie Folk,86,236,2024,Ireland,False,0.62,0.48,0.68,0.42,1,Spotify Wrapped 2025 Top 50 Global Songs
+12,Lunch,Billie Eilish,1.15,Indie Pop,96,172,2024,USA,True,0.7,0.52,0.55,0.14,1,Spotify Wrapped 2025 Top 50 Global Songs
+13,Boom Boom Boom Boom,ROSE,1.12,K-Pop/Pop,140,182,2024,South Korea,False,0.84,0.82,0.92,0.03,1,Spotify Wrapped 2025 Top 50 Global Songs
+14,Million Dollar Baby,Tommy Richman,1.09,R&B/Pop,135,138,2024,USA,True,0.77,0.76,0.8,0.06,1,Spotify Wrapped 2025 Top 50 Global Songs
+15,Sticky,Shaboozey,1.07,Country/Hip-Hop,93,191,2024,USA,False,0.72,0.58,0.74,0.18,1,Spotify Wrapped 2025 Top 50 Global Songs
+16,A Bar Song (Tipsy),Shaboozey,1.05,Country,96,224,2024,USA,False,0.7,0.6,0.78,0.22,1,Spotify Wrapped 2025 Top 50 Global Songs
+17,I Had Some Help,Post Malone ft. Morgan Wallen,1.03,Country/Pop,110,192,2024,USA,False,0.74,0.65,0.8,0.15,1,Spotify Wrapped 2025 Top 50 Global Songs
+18,Flowers,Miley Cyrus,0.98,Pop,118,200,2023,USA,False,0.74,0.74,0.88,0.1,1,Spotify Wrapped 2025 Top 50 Global Songs
+19,Cruel Summer,Taylor Swift,0.96,Synth-Pop,170,178,2019,USA,False,0.55,0.7,0.57,0.12,1,Spotify Wrapped 2025 Top 50 Global Songs
+20,Fortnight,Taylor Swift ft. Post Malone,0.94,Indie Pop,107,228,2024,USA,False,0.55,0.54,0.22,0.18,1,Spotify Wrapped 2025 Top 50 Global Songs
+21,Levii's Jeans,Beyoncé ft. Post Malone,0.92,Country/Pop,106,254,2024,USA,False,0.72,0.65,0.72,0.14,1,Spotify Wrapped 2025 Top 50 Global Songs
+22,Texas Hold 'Em,Beyoncé,0.9,Country,87,238,2024,USA,False,0.62,0.6,0.74,0.35,1,Spotify Wrapped 2025 Top 50 Global Songs
+23,Gata Only,FloyyMenor & Cris MJ,0.88,Reggaeton,105,165,2023,Chile,True,0.86,0.8,0.76,0.05,1,Spotify Wrapped 2025 Top 50 Global Songs
+24,Tusa,KAROL G & Nicki Minaj,0.87,Reggaeton,130,200,2019,Colombia,False,0.78,0.78,0.72,0.08,1,Spotify Wrapped 2025 Top 50 Global Songs
+25,Lovin On Me,Jack Harlow,0.85,Hip-Hop/Pop,100,167,2023,USA,False,0.78,0.62,0.85,0.07,1,Spotify Wrapped 2025 Top 50 Global Songs
+26,Baile Inolvidable,KAROL G,0.84,Latin Pop,100,202,2024,Colombia,False,0.8,0.72,0.82,0.1,1,Spotify Wrapped 2025 Top 50 Global Songs
+27,LTME Post,Gracie Abrams,0.82,Indie Pop,92,194,2024,USA,False,0.6,0.48,0.44,0.3,1,Spotify Wrapped 2025 Top 50 Global Songs
+28,Bed Chem,Sabrina Carpenter,0.8,Pop,104,160,2024,USA,True,0.72,0.58,0.78,0.12,2,Spotify Wrapped 2025 Top 50 Global Songs
+29,Exes,Tate McRae,0.79,Pop,128,177,2024,Canada,False,0.8,0.72,0.72,0.08,1,Spotify Wrapped 2025 Top 50 Global Songs
+30,Jump,Tyla,0.78,Afrobeats,110,191,2024,South Africa,False,0.86,0.76,0.84,0.06,2,Spotify Wrapped 2025 Top 50 Global Songs
+31,Water,Tyla,0.77,Afrobeats,107,177,2023,South Africa,False,0.82,0.7,0.8,0.08,1,Spotify Wrapped 2025 Top 50 Global Songs
+32,I Can Do It With A Broken Heart,Taylor Swift,0.76,Synth-Pop,164,213,2024,USA,False,0.64,0.74,0.68,0.04,1,Spotify Wrapped 2025 Top 50 Global Songs
+33,luther,Kendrick Lamar & SZA,0.74,Hip-Hop/R&B,76,242,2024,USA,False,0.56,0.42,0.48,0.32,1,Spotify Wrapped 2025 Top 50 Global Songs
+34,WILDFLOWER,Billie Eilish,0.73,Indie Pop,90,189,2024,USA,False,0.6,0.42,0.5,0.42,3,Spotify Wrapped 2025 Top 50 Global Songs
+35,Pink Pony Club,Chappell Roan,0.72,Synth-Pop,130,251,2021,USA,False,0.72,0.8,0.62,0.06,4,Spotify Wrapped 2025 Top 50 Global Songs
+36,Femininomenon,Chappell Roan,0.71,Synth-Pop,116,224,2023,USA,False,0.7,0.78,0.68,0.04,5,Spotify Wrapped 2025 Top 50 Global Songs
+37,End Of Beginning,Djo,0.7,Indie Rock,139,196,2022,USA,False,0.52,0.64,0.44,0.1,3,Spotify Wrapped 2025 Top 50 Global Songs
+38,Like That,Kendrick Lamar,0.69,Hip-Hop,100,285,2024,USA,True,0.7,0.68,0.42,0.06,2,Spotify Wrapped 2025 Top 50 Global Songs
+39,we can't be friends,Ariana Grande,0.68,R&B/Pop,72,218,2024,USA,False,0.48,0.4,0.28,0.5,1,Spotify Wrapped 2025 Top 50 Global Songs
+40,Vampire,Olivia Rodrigo,0.67,Pop Rock,91,218,2023,USA,False,0.52,0.58,0.44,0.08,1,Spotify Wrapped 2025 Top 50 Global Songs
+41,Stumblin' In,Cyril & Violet Skies,0.66,Pop,90,184,2023,Netherlands,False,0.66,0.54,0.76,0.22,3,Spotify Wrapped 2025 Top 50 Global Songs
+42,Yellow,Coldplay,0.64,Alternative,88,269,2000,UK,False,0.46,0.54,0.36,0.14,4,Spotify Wrapped 2025 Top 50 Global Songs
+43,Pretty Girl,Clairo,0.63,Indie Pop,97,164,2017,USA,False,0.7,0.52,0.68,0.28,22,Spotify Wrapped 2025 Top 50 Global Songs
+44,Running Up That Hill,Kate Bush,0.62,Art Pop,112,301,1985,UK,False,0.41,0.68,0.25,0.08,3,Spotify Wrapped 2025 Top 50 Global Songs
+45,good 4 u,Olivia Rodrigo,0.61,Pop Punk,166,178,2021,USA,False,0.56,0.9,0.65,0.0,1,Spotify Wrapped 2025 Top 50 Global Songs
+46,Shake It Off,Taylor Swift,0.6,Pop,160,219,2014,USA,False,0.65,0.8,0.94,0.06,1,Spotify Wrapped 2025 Top 50 Global Songs
+47,Espresso (Remix),Sabrina Carpenter & Jimin,0.59,Pop/K-Pop,104,178,2024,USA/S.Korea,False,0.82,0.74,0.92,0.05,2,Spotify Wrapped 2025 Top 50 Global Songs
+48,That's So True,Gracie Abrams,0.58,Indie Pop,97,185,2024,USA,False,0.64,0.55,0.66,0.22,1,Spotify Wrapped 2025 Top 50 Global Songs
+49,Bodyguard,Beyoncé,0.57,Country,90,218,2024,USA,False,0.6,0.56,0.66,0.38,4,Spotify Wrapped 2025 Top 50 Global Songs
+50,Azizam,Ed Sheeran,0.56,Pop/Folk,88,196,2023,UK,False,0.7,0.52,0.72,0.32,3,Spotify Wrapped 2025 Top 50 Global Songs

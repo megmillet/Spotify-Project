@@ -1,0 +1,101 @@
+alltime_rank,song_title,artist,total_streams_billions,primary_genre,bpm,release_year,artist_country,explicit,danceability,energy,valence,acousticness,dataset_part
+1,Blinding Lights,The Weeknd,5.26,Synth-Pop,171,2019,Canada,False,0.51,0.8,0.33,0.0,Spotify All-Time Most Streamed Top 100
+2,Shape of You,Ed Sheeran,4.9,Pop/Dancehall,96,2017,UK,False,0.83,0.65,0.93,0.08,Spotify All-Time Most Streamed Top 100
+3,Someone You Loved,Lewis Capaldi,4.05,Pop,77,2018,UK,False,0.6,0.45,0.42,0.29,Spotify All-Time Most Streamed Top 100
+4,Sunflower,Post Malone & Swae Lee,3.98,Hip-Hop/Pop,93,2018,USA,False,0.76,0.49,0.84,0.15,Spotify All-Time Most Streamed Top 100
+5,One Dance,Drake,3.92,Afrobeats/Pop,100,2016,Canada,False,0.79,0.62,0.68,0.09,Spotify All-Time Most Streamed Top 100
+6,Stay,The Kid LAROI & Justin Bieber,3.87,Pop,170,2021,Australia,True,0.59,0.8,0.6,0.0,Spotify All-Time Most Streamed Top 100
+7,Believer,Imagine Dragons,3.76,Alt Rock,125,2017,USA,False,0.33,0.86,0.45,0.07,Spotify All-Time Most Streamed Top 100
+8,Rockstar,Post Malone ft. 21 Savage,3.72,Hip-Hop,159,2017,USA,True,0.55,0.52,0.13,0.08,Spotify All-Time Most Streamed Top 100
+9,Dance Monkey,Tones and I,3.69,Pop,98,2019,Australia,False,0.83,0.63,0.73,0.14,Spotify All-Time Most Streamed Top 100
+10,Happier,Marshmello & Bastille,3.65,EDM/Pop,100,2018,USA/UK,False,0.62,0.82,0.96,0.02,Spotify All-Time Most Streamed Top 100
+11,Senorita,Shawn Mendes & Camila Cabello,3.62,Latin Pop,117,2019,Canada/Cuba,False,0.75,0.74,0.75,0.14,Spotify All-Time Most Streamed Top 100
+12,Watermelon Sugar,Harry Styles,3.58,Indie Pop,95,2019,UK,False,0.55,0.82,0.74,0.12,Spotify All-Time Most Streamed Top 100
+13,Perfect,Ed Sheeran,3.55,Pop/Folk,95,2017,UK,False,0.66,0.43,0.41,0.37,Spotify All-Time Most Streamed Top 100
+14,Levitating,Dua Lipa,3.52,Nu-Disco,103,2020,UK,False,0.7,0.82,0.91,0.0,Spotify All-Time Most Streamed Top 100
+15,Heat Waves,Glass Animals,3.4,Indie Pop,80,2020,UK,False,0.51,0.54,0.58,0.22,Spotify All-Time Most Streamed Top 100
+16,Bad Guy,Billie Eilish,3.37,Electropop,135,2019,USA,False,0.7,0.43,0.56,0.0,Spotify All-Time Most Streamed Top 100
+17,Drivers License,Olivia Rodrigo,3.34,Pop,73,2021,USA,False,0.59,0.43,0.13,0.28,Spotify All-Time Most Streamed Top 100
+18,Circles,Post Malone,3.31,Pop Rap,121,2019,USA,False,0.69,0.55,0.72,0.09,Spotify All-Time Most Streamed Top 100
+19,Memories,Maroon 5,3.28,Pop,91,2019,USA,False,0.76,0.36,0.7,0.52,Spotify All-Time Most Streamed Top 100
+20,Shallow,Lady Gaga & Bradley Cooper,3.25,Pop/Country,96,2018,USA,False,0.59,0.55,0.37,0.22,Spotify All-Time Most Streamed Top 100
+21,As It Was,Harry Styles,3.22,Indie Pop,174,2022,UK,False,0.52,0.73,0.36,0.0,Spotify All-Time Most Streamed Top 100
+22,Dynamite,BTS,3.19,Pop/Funk,114,2020,South Korea,False,0.74,0.77,0.74,0.01,Spotify All-Time Most Streamed Top 100
+23,Flowers,Miley Cyrus,3.16,Pop,118,2023,USA,False,0.74,0.74,0.88,0.1,Spotify All-Time Most Streamed Top 100
+24,Counting Stars,OneRepublic,3.14,Pop Rock,122,2013,USA,False,0.62,0.8,0.58,0.12,Spotify All-Time Most Streamed Top 100
+25,Lucid Dreams,Juice WRLD,3.11,Emo Rap,84,2018,USA,True,0.51,0.49,0.22,0.07,Spotify All-Time Most Streamed Top 100
+26,Closer,The Chainsmokers ft. Halsey,3.08,EDM/Pop,95,2016,USA,True,0.74,0.65,0.77,0.04,Spotify All-Time Most Streamed Top 100
+27,Calm Down,Rema & Selena Gomez,3.02,Afrobeats/Pop,106,2022,Nigeria/USA,False,0.8,0.72,0.78,0.08,Spotify All-Time Most Streamed Top 100
+28,Anti-Hero,Taylor Swift,2.99,Indie Pop,97,2022,USA,False,0.64,0.58,0.47,0.1,Spotify All-Time Most Streamed Top 100
+29,Save Your Tears,The Weeknd,2.88,Synth-Pop,118,2020,Canada,False,0.68,0.82,0.78,0.01,Spotify All-Time Most Streamed Top 100
+30,Die For You,The Weeknd,2.86,R&B,95,2016,Canada,False,0.4,0.55,0.32,0.04,Spotify All-Time Most Streamed Top 100
+31,Lovely,Billie Eilish & Khalid,2.84,Indie Pop,95,2018,USA,False,0.35,0.3,0.08,0.5,Spotify All-Time Most Streamed Top 100
+32,Uptown Funk,Mark Ronson ft. Bruno Mars,2.53,Funk/Pop,115,2014,USA,False,0.9,0.96,0.82,0.02,Spotify All-Time Most Streamed Top 100
+33,Sweater Weather,The Neighbourhood,2.47,Indie Rock,124,2013,USA,False,0.59,0.64,0.5,0.26,Spotify All-Time Most Streamed Top 100
+34,Cruel Summer,Taylor Swift,2.72,Synth-Pop,170,2019,USA,False,0.55,0.7,0.57,0.12,Spotify All-Time Most Streamed Top 100
+35,Despacito,Luis Fonsi ft. Daddy Yankee,2.15,Reggaeton,178,2017,Puerto Rico,False,0.69,0.81,0.81,0.22,Spotify All-Time Most Streamed Top 100
+36,Havana,Camila Cabello ft. Young Thug,2.13,Latin Pop,105,2017,Cuba/USA,False,0.76,0.58,0.61,0.14,Spotify All-Time Most Streamed Top 100
+37,Easy On Me,Adele,2.02,Pop/Soul,62,2021,UK,False,0.34,0.26,0.17,0.76,Spotify All-Time Most Streamed Top 100
+38,Lose Yourself,Eminem,1.95,Hip-Hop,171,2002,USA,True,0.66,0.62,0.26,0.0,Spotify All-Time Most Streamed Top 100
+39,Numb,Linkin Park,1.82,Alt Rock,118,2003,USA,False,0.46,0.9,0.15,0.02,Spotify All-Time Most Streamed Top 100
+40,Smells Like Teen Spirit,Nirvana,1.8,Grunge,117,1991,USA,False,0.5,0.9,0.44,0.0,Spotify All-Time Most Streamed Top 100
+41,Espresso,Sabrina Carpenter,1.76,Pop,104,2024,USA,False,0.8,0.73,0.96,0.06,Spotify All-Time Most Streamed Top 100
+42,Radioactive,Imagine Dragons,1.74,Alt Rock,136,2012,USA,False,0.38,0.76,0.23,0.1,Spotify All-Time Most Streamed Top 100
+43,Running Up That Hill,Kate Bush,1.52,Art Pop,112,1985,UK,False,0.41,0.68,0.25,0.08,Spotify All-Time Most Streamed Top 100
+44,Not Like Us,Kendrick Lamar,1.5,Hip-Hop,101,2024,USA,True,0.82,0.72,0.62,0.04,Spotify All-Time Most Streamed Top 100
+45,good 4 u,Olivia Rodrigo,1.48,Pop Punk,166,2021,USA,False,0.56,0.9,0.65,0.0,Spotify All-Time Most Streamed Top 100
+46,All I Want for Christmas Is You,Mariah Carey,2.76,Holiday Pop,150,1994,USA,False,0.42,0.66,0.78,0.32,Spotify All-Time Most Streamed Top 100
+47,Starboy,The Weeknd ft. Daft Punk,2.62,Synth-Pop,186,2016,Canada,True,0.68,0.79,0.5,0.0,Spotify All-Time Most Streamed Top 100
+48,goosebumps,Travis Scott,2.59,Hip-Hop,130,2016,USA,True,0.62,0.68,0.39,0.06,Spotify All-Time Most Streamed Top 100
+49,7 rings,Ariana Grande,2.56,Trap Pop,140,2019,USA,True,0.64,0.61,0.49,0.02,Spotify All-Time Most Streamed Top 100
+50,Die With A Smile,Lady Gaga & Bruno Mars,1.84,Pop,120,2024,USA,False,0.72,0.68,0.55,0.18,Spotify All-Time Most Streamed Top 100
+51,Peaches,Justin Bieber,1.6,R&B/Pop,90,2021,Canada,False,0.68,0.52,0.69,0.16,Spotify All-Time Most Streamed Top 100
+52,Falling,Harry Styles,2.4,Pop Rock,88,2019,UK,False,0.43,0.43,0.07,0.38,Spotify All-Time Most Streamed Top 100
+53,Thunder,Imagine Dragons,3.49,Alt Rock,168,2017,USA,False,0.6,0.52,0.55,0.01,Spotify All-Time Most Streamed Top 100
+54,Bad Habits,Ed Sheeran,1.62,Synth-Pop,126,2021,UK,False,0.68,0.83,0.72,0.0,Spotify All-Time Most Streamed Top 100
+55,Butter,BTS,1.6,Funk/Pop,110,2021,South Korea,False,0.79,0.73,0.74,0.01,Spotify All-Time Most Streamed Top 100
+56,Night Changes,One Direction,2.34,Pop,82,2014,UK,False,0.56,0.54,0.72,0.3,Spotify All-Time Most Streamed Top 100
+57,High Hopes,Panic! At The Disco,2.32,Pop Rock,191,2018,USA,False,0.66,0.83,0.84,0.04,Spotify All-Time Most Streamed Top 100
+58,Riptide,Vance Joy,2.5,Indie Folk,131,2013,Australia,False,0.66,0.55,0.82,0.5,Spotify All-Time Most Streamed Top 100
+59,Way Down We Go,KALEO,2.29,Blues Rock,78,2016,Iceland,False,0.46,0.48,0.28,0.26,Spotify All-Time Most Streamed Top 100
+60,Heather,Conan Gray,2.26,Indie Pop,86,2020,USA,False,0.44,0.3,0.3,0.54,Spotify All-Time Most Streamed Top 100
+61,Mood,24kGoldn ft. iann dior,2.2,Pop Punk,150,2020,USA,True,0.7,0.75,0.6,0.02,Spotify All-Time Most Streamed Top 100
+62,Photograph,Ed Sheeran,3.45,Folk Pop,96,2014,UK,False,0.6,0.56,0.52,0.31,Spotify All-Time Most Streamed Top 100
+63,Love Yourself,Justin Bieber,2.93,Acoustic Pop,102,2015,Canada,False,0.62,0.38,0.55,0.46,Spotify All-Time Most Streamed Top 100
+64,Without Me,Halsey,2.82,Pop,130,2018,USA,False,0.58,0.69,0.3,0.05,Spotify All-Time Most Streamed Top 100
+65,Something Just Like This,The Chainsmokers & Coldplay,2.9,EDM/Pop,103,2017,USA/UK,False,0.62,0.73,0.53,0.06,Spotify All-Time Most Streamed Top 100
+66,Positions,Ariana Grande,2.65,R&B/Pop,144,2020,USA,False,0.74,0.66,0.69,0.04,Spotify All-Time Most Streamed Top 100
+67,Roses,SAINt JHN,3.42,Hip-Hop,98,2016,USA,False,0.72,0.62,0.44,0.06,Spotify All-Time Most Streamed Top 100
+68,Thinking Out Loud,Ed Sheeran,2.1,Soul/R&B,79,2014,UK,False,0.78,0.44,0.46,0.3,Spotify All-Time Most Streamed Top 100
+69,Wrecking Ball,Miley Cyrus,2.08,Pop Rock,72,2013,USA,False,0.36,0.53,0.24,0.24,Spotify All-Time Most Streamed Top 100
+70,golden hour,JVKE,2.68,Indie Pop,98,2022,USA,False,0.59,0.55,0.86,0.28,Spotify All-Time Most Streamed Top 100
+71,Unstoppable,Sia,2.96,Pop,84,2016,Australia,False,0.64,0.44,0.55,0.18,Spotify All-Time Most Streamed Top 100
+72,abcdefu,GAYLE,1.99,Pop Punk,144,2021,USA,True,0.58,0.85,0.68,0.02,Spotify All-Time Most Streamed Top 100
+73,Sunroof,Nicky Youre & Dazy,1.64,Indie Pop,138,2021,USA,False,0.76,0.8,0.96,0.06,Spotify All-Time Most Streamed Top 100
+74,Beautiful Things,Benson Boone,1.4,Pop Rock,97,2024,USA,False,0.46,0.68,0.46,0.07,Spotify All-Time Most Streamed Top 100
+75,middle of the night,Elley Duhé,2.7,Pop,97,2022,USA,False,0.62,0.62,0.44,0.14,Spotify All-Time Most Streamed Top 100
+76,Savage Love,Jawsh 685 & Jason Derulo,1.86,Pop,107,2020,NZ/USA,False,0.76,0.69,0.65,0.01,Spotify All-Time Most Streamed Top 100
+77,APT.,ROSE & Bruno Mars,1.66,K-Pop/Pop,145,2024,South Korea,False,0.86,0.79,0.88,0.05,Spotify All-Time Most Streamed Top 100
+78,Welcome To The Black Parade,My Chemical Romance,1.78,Alt Rock,64,2006,USA,False,0.31,0.85,0.12,0.0,Spotify All-Time Most Streamed Top 100
+79,Iris,Goo Goo Dolls,1.72,Alt Rock,77,1998,USA,False,0.33,0.28,0.14,0.58,Spotify All-Time Most Streamed Top 100
+80,Astronaut In The Ocean,Masked Wolf,1.7,Hip-Hop,145,2019,Australia,False,0.72,0.79,0.38,0.04,Spotify All-Time Most Streamed Top 100
+81,Levii's Jeans,Beyoncé ft. Post Malone,1.68,Country/Pop,106,2024,USA,False,0.72,0.65,0.72,0.14,Spotify All-Time Most Streamed Top 100
+82,Lose Control,Teddy Swims,1.65,R&B/Soul,90,2023,USA,False,0.6,0.55,0.64,0.21,Spotify All-Time Most Streamed Top 100
+83,Too Sweet,Hozier,1.63,Indie Folk,86,2024,Ireland,False,0.62,0.48,0.68,0.42,Spotify All-Time Most Streamed Top 100
+84,Sign of the Times,Harry Styles,2.05,Art Rock,90,2017,UK,False,0.3,0.53,0.1,0.2,Spotify All-Time Most Streamed Top 100
+85,Adore You,Harry Styles,1.9,Indie Pop,108,2019,UK,False,0.56,0.76,0.66,0.04,Spotify All-Time Most Streamed Top 100
+86,Arcade,Duncan Laurence,1.88,Indie Pop,86,2019,Netherlands,False,0.34,0.3,0.1,0.52,Spotify All-Time Most Streamed Top 100
+87,See You Again,Wiz Khalifa ft. Charlie Puth,1.42,Hip-Hop/Pop,80,2015,USA,False,0.53,0.37,0.48,0.42,Spotify All-Time Most Streamed Top 100
+88,Attention,Charlie Puth,1.44,Pop,107,2017,USA,True,0.78,0.68,0.6,0.06,Spotify All-Time Most Streamed Top 100
+89,In The Stars,Benson Boone,1.68,Pop,80,2023,USA,False,0.51,0.44,0.42,0.28,Spotify All-Time Most Streamed Top 100
+90,Kiss Me More,Doja Cat ft. SZA,2.23,Pop/R&B,115,2021,USA,False,0.78,0.66,0.8,0.02,Spotify All-Time Most Streamed Top 100
+91,End Of Beginning,Djo,1.6,Indie Rock,139,2022,USA,False,0.52,0.64,0.44,0.1,Spotify All-Time Most Streamed Top 100
+92,Ribs,Lorde,1.54,Indie Pop,104,2013,New Zealand,False,0.38,0.44,0.22,0.3,Spotify All-Time Most Streamed Top 100
+93,Lemon Tree,Fools Garden,1.46,Pop Rock,139,1996,Germany,False,0.74,0.76,0.86,0.38,Spotify All-Time Most Streamed Top 100
+94,Bliss,Muse,1.62,Alt Rock,154,2001,UK,False,0.44,0.82,0.44,0.04,Spotify All-Time Most Streamed Top 100
+95,Stumblin' In,Cyril & Violet Skies,1.58,Pop,90,2023,Netherlands,False,0.66,0.54,0.76,0.22,Spotify All-Time Most Streamed Top 100
+96,Electricity,Silk City & Dua Lipa,1.92,EDM/Pop,143,2018,UK,False,0.76,0.88,0.72,0.0,Spotify All-Time Most Streamed Top 100
+97,Blinding Lights (Remix),The Weeknd & Rosalía,1.44,Synth-Pop,171,2020,Canada/Spain,False,0.54,0.8,0.36,0.01,Spotify All-Time Most Streamed Top 100
+98,Falling For You,Peachy feat. mxmtoon,1.56,Indie Pop,150,2018,USA,False,0.64,0.42,0.72,0.38,Spotify All-Time Most Streamed Top 100
+99,Laugh Now Cry Later,Drake ft. Lil Durk,3.05,Hip-Hop,142,2020,Canada,True,0.82,0.62,0.55,0.02,Spotify All-Time Most Streamed Top 100
+100,Shake It Off,Taylor Swift,1.6,Pop,160,2014,USA,False,0.65,0.8,0.94,0.06,Spotify All-Time Most Streamed Top 100

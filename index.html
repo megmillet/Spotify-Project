@@ -294,6 +294,7 @@ let profileCache = {};
 let tasksCache = [];
 let notesCache = [];
 let openTaskIds = new Set();
+const LOCAL_DB_KEY = "spotify_workdoc_v1";
 
 function escapeHtml(s) {
   return (s || "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -325,6 +326,74 @@ async function nameFor(authorId, fallbackName) {
 function currentName() {
   const v = document.getElementById('nameInput').value.trim();
   return v || null;
+}
+
+function createLocalDb() {
+  let state = { tasks: [], notes: [] };
+  const listeners = { tasks: [], notes: [] };
+
+  try {
+    const raw = localStorage.getItem(LOCAL_DB_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && Array.isArray(parsed.tasks) && Array.isArray(parsed.notes)) state = parsed;
+    }
+  } catch (e) {}
+
+  function persist() {
+    try { localStorage.setItem(LOCAL_DB_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+
+  function notify(collection) {
+    const docs = (state[collection] || []).map(item => ({
+      id: item.id,
+      data: () => {
+        const { id: _, ...rest } = item;
+        return rest;
+      }
+    }));
+    listeners[collection].forEach(cb => cb({ docs }));
+  }
+
+  function id() {
+    return "local_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
+  }
+
+  return {
+    collection(name) {
+      return {
+        add: async (doc) => {
+          const item = { id: id(), ...doc };
+          state[name] = [...(state[name] || []), item];
+          persist();
+          notify(name);
+          return { id: item.id };
+        },
+        onSnapshot: (cb) => {
+          listeners[name].push(cb);
+          notify(name);
+        }
+      };
+    },
+    doc(path) {
+      const [name, entryId] = path.split("/");
+      return {
+        get: async () => {
+          const found = (state[name] || []).find(x => x.id === entryId) || null;
+          const data = found ? (() => {
+            const { id: _, ...rest } = found;
+            return rest;
+          })() : null;
+          return { data };
+        },
+        update: async (patch) => {
+          state[name] = (state[name] || []).map(x => x.id === entryId ? ({ ...x, ...patch }) : x);
+          persist();
+          notify(name);
+        }
+      };
+    }
+  };
 }
 
 // ---------- render: notes ----------
@@ -502,12 +571,11 @@ async function init() {
   const syncEl = document.getElementById('syncState');
 
   if (!db) {
-    syncEl.textContent = "offline preview";
-    renderTasks();
-    renderNotes();
-    return;
+    db = createLocalDb();
+    syncEl.textContent = "saved in browser";
+  } else {
+    syncEl.textContent = "synced";
   }
-  syncEl.textContent = "synced";
 
   db.collection("tasks").onSnapshot(snap => {
     tasksCache = (snap.docs || snap || []).map(d => ({ id: d.id, ...(d.data ? d.data() : d) }));

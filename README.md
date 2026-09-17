@@ -38,3 +38,19 @@ Raw data → Clean → Harmonize → Engineer → Explore → Infer → Model �
 - Version-controlled analysis
 - Documented preprocessing and statistical decisions
 - Shared data dictionary and auditable outputs by phase
+
+## Collaborative task board (website)
+
+The `/home/runner/work/Spotify-Project/Spotify-Project/index.html` page now supports live multi-user collaboration with Firebase Firestore.
+
+### One-time setup
+
+1. Create a Firebase project.
+2. Enable:
+   - **Authentication** → Anonymous sign-in
+   - **Firestore Database** (production or test mode)
+3. Copy `/home/runner/work/Spotify-Project/Spotify-Project/firebase-config.example.json` to `firebase-config.json` in the repo root and fill in your Firebase web config values.
+4. Deploy/publish the site (for example, GitHub Pages).
+
+After setup, everyone using the page URL will see task/note updates in real time.  
+If `firebase-config.json` is missing or invalid, the page falls back to browser-local storage for single-user use.

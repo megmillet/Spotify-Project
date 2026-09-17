@@ -277,6 +277,9 @@
   <p class="footer-note">Changes save automatically and sync for everyone with this link.</p>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
 <script>
 const STATUS = {
   idea:      { label: "Idea",         color: "var(--status-idea)" },
@@ -295,6 +298,7 @@ let tasksCache = [];
 let notesCache = [];
 let openTaskIds = new Set();
 const LOCAL_DB_KEY = "spotify_workdoc_v1";
+const FIREBASE_CONFIG_KEY = "workdoc_firebase_config";
 
 function escapeHtml(s) {
   return (s || "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
@@ -326,6 +330,76 @@ async function nameFor(authorId, fallbackName) {
 function currentName() {
   const v = document.getElementById('nameInput').value.trim();
   return v || null;
+}
+function safeJsonParse(text) {
+  if (!text) return null;
+  try { return JSON.parse(text); } catch (e) { return null; }
+}
+function getOrCreateLocalId() {
+  const key = "workdoc_client_id";
+  let id = null;
+  try { id = localStorage.getItem(key); } catch (e) {}
+  if (!id) {
+    id = "client_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8);
+    try { localStorage.setItem(key, id); } catch (e) {}
+  }
+  return id;
+}
+async function loadFirebaseConfig() {
+  const direct = window.WORKDOC_FIREBASE_CONFIG;
+  if (direct && typeof direct === "object") return direct;
+  const meta = document.querySelector('meta[name="workdoc-firebase-config"]');
+  const fromMeta = safeJsonParse(meta?.content);
+  if (fromMeta) return fromMeta;
+  const fromStorage = safeJsonParse(localStorage.getItem(FIREBASE_CONFIG_KEY));
+  if (fromStorage) return fromStorage;
+  try {
+    const res = await fetch("firebase-config.json", { cache: "no-store" });
+    if (!res.ok) return null;
+    const config = await res.json();
+    return config && typeof config === "object" ? config : null;
+  } catch (e) {
+    return null;
+  }
+}
+async function initFirebaseDb() {
+  if (!window.firebase || !window.firebase.initializeApp || !window.firebase.firestore) return null;
+  const config = await loadFirebaseConfig();
+  if (!config || !config.apiKey || !config.projectId) return null;
+  const app = window.firebase.apps.length ? window.firebase.app() : window.firebase.initializeApp(config);
+  const auth = window.firebase.auth(app);
+  if (!auth.currentUser) await auth.signInAnonymously();
+  myId = auth.currentUser?.uid || myId;
+  const firestore = window.firebase.firestore(app);
+  const FieldValue = window.firebase.firestore.FieldValue;
+  return {
+    collection(name) {
+      return {
+        add: async (doc) => {
+          const ref = await firestore.collection(name).add(doc);
+          return { id: ref.id };
+        },
+        onSnapshot: (cb) => {
+          firestore.collection(name).orderBy("createdAt", "asc").onSnapshot(snapshot => cb({ docs: snapshot.docs }));
+        }
+      };
+    },
+    doc(path) {
+      const ref = firestore.doc(path);
+      return {
+        get: async () => {
+          const snap = await ref.get();
+          return { data: snap.exists ? snap.data() : null };
+        },
+        update: async (patch) => {
+          await ref.set(patch, { merge: true });
+        },
+        appendToArray: async (field, value) => {
+          await ref.set({ [field]: FieldValue.arrayUnion(value) }, { merge: true });
+        }
+      };
+    }
+  };
 }
 
 function createLocalDb() {
@@ -388,6 +462,15 @@ function createLocalDb() {
         },
         update: async (patch) => {
           state[name] = (state[name] || []).map(x => x.id === entryId ? ({ ...x, ...patch }) : x);
+          persist();
+          notify(name);
+        },
+        appendToArray: async (field, value) => {
+          state[name] = (state[name] || []).map(x => {
+            if (x.id !== entryId) return x;
+            const current = Array.isArray(x[field]) ? x[field] : [];
+            return { ...x, [field]: [...current, value] };
+          });
           persist();
           notify(name);
         }
@@ -506,9 +589,14 @@ async function postToTask(t, isQuestion) {
     type: isQuestion ? 'question' : 'update'
   };
   try {
-    const snap = await db.doc("tasks/" + t.id).get();
-    const cur = (snap && snap.data && snap.data.comments) || [];
-    await db.doc("tasks/" + t.id).update({ comments: [...cur, entry] });
+    const docRef = db.doc("tasks/" + t.id);
+    if (docRef.appendToArray) {
+      await docRef.appendToArray("comments", entry);
+    } else {
+      const snap = await docRef.get();
+      const cur = (snap && snap.data && snap.data.comments) || [];
+      await docRef.update({ comments: [...cur, entry] });
+    }
     input.value = "";
   } catch (e) { console.error(e); }
 }
@@ -560,22 +648,31 @@ async function init() {
     try { localStorage.setItem('workdoc_name', e.target.value.trim()); } catch (err) {}
   });
 
-  try {
-    db = await window.claude.use("db");
-  } catch (e) { db = null; }
-  try {
-    userCap = await window.claude.use("user");
-    if (userCap) myId = userCap.id ? userCap.id() : null;
-  } catch (e) { userCap = null; }
-
   const syncEl = document.getElementById('syncState');
+
+  if (window.claude?.use) {
+    try {
+      db = await window.claude.use("db");
+    } catch (e) { db = null; }
+    try {
+      userCap = await window.claude.use("user");
+      if (userCap) myId = userCap.id ? userCap.id() : null;
+    } catch (e) { userCap = null; }
+  }
+
+  if (!db) {
+    try { db = await initFirebaseDb(); } catch (e) { db = null; }
+  }
 
   if (!db) {
     db = createLocalDb();
-    syncEl.textContent = "saved in browser";
-  } else {
+    syncEl.textContent = "saved in this browser only";
+  } else if (window.claude?.use && userCap) {
     syncEl.textContent = "synced";
+  } else {
+    syncEl.textContent = "live sync enabled";
   }
+  if (!myId) myId = getOrCreateLocalId();
 
   db.collection("tasks").onSnapshot(snap => {
     tasksCache = (snap.docs || snap || []).map(d => ({ id: d.id, ...(d.data ? d.data() : d) }));

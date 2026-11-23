@@ -1,0 +1,7 @@
+score,block,variable,loading,block-variance share
+size,streams,log_lifetime,0.7071067811865472,0.9111946424395384
+size,streams,log_daily,0.7071067811865477,0.9111946424395384
+momentum,streams,log_lifetime,-0.7071067811865477,0.08880535756046151
+momentum,streams,log_daily,0.7071067811865472,0.08880535756046151
+solo_orientation,composition,feature_share,-0.7071067811865508,0.8744670412867346
+solo_orientation,composition,solo_share,0.7071067811865441,0.8744670412867346
